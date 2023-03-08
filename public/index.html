@@ -44,11 +44,26 @@
       }
 
     </style>
+   
   </head>
   <body>
     <h1>Frog Game</h1>
     <div id="board">
     </div>
-    <script src="app.js"></script>
+
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.3/firebase-app.js"
+      const firebaseConfig = {
+        apiKey: "AIzaSyBXFyvObrhs8Y4WunwQ8BfQfIsJzWj0sGE",
+        authDomain: "frog-6daaa.firebaseapp.com",
+        projectId: "frog-6daaa",
+        storageBucket: "frog-6daaa.appspot.com",
+        messagingSenderId: "214610653162",
+        appId: "1:214610653162:web:da0e5931873c4afe5d8c93",
+        measurementId: "G-1Q84H8HJ7T"
+      };
+      const app = initializeApp(firebaseConfig);
+    </script>
+    <script src="app.js" defer></script>
   </body>
 </html>

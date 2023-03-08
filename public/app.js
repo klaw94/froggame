@@ -1,3 +1,4 @@
+
 let tiles = new Array();
 let board = document.querySelector("#board");
 const visualTiles = new Array(12);
